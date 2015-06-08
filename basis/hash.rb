@@ -1,4 +1,12 @@
 
+default = {
+    "name" => "hoge",
+    "age" => 100
+}
+
+puts default["name"]
+puts default["age"]
+
 hash = {
     :name => "ktaro",
     :age => "99"
