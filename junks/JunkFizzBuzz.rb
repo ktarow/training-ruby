@@ -1,5 +1,5 @@
 class JunkFizzBuzz
-  @arr
+  attr_reader :arr
 
   def initialize(arr)
     @arr = arr
@@ -34,7 +34,6 @@ class JunkFizzBuzz
     end
   end
 
-  attr_accessor :arr
 end
 
 fizzbuzz = JunkFizzBuzz.new((0..100).to_a)
