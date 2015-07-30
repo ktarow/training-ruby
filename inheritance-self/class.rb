@@ -3,8 +3,10 @@ require './module'
 class ClassTest
   puts self
 
-  extend(ModuleTest)
+  #extend(ModuleTest)
+  include(ModuleTest)
 end
 
-ClassTest.new
-ClassTest.test
+obj = ClassTest.new
+#ClassTest.test
+obj.test
